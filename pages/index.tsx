@@ -13,7 +13,7 @@ import ProductPagination from "../components/ProductPagination";
 const Home: NextPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [pageIndex, setPageIndex] = useState<number>(0);
-  const [category, setCategory] = useState<Category>();
+  const [category, setCategory] = useState<Category | null>(null);
   const [filters, setFilters] = useState<Filters>({
     price: null,
     color: null,

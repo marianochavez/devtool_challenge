@@ -9,7 +9,7 @@ import ProductCard from "./ProductCard";
 
 type Props = {
   filters: Filters;
-  category: Category | undefined;
+  category: Category | null;
   page: number;
   onChange: (products: Product[]) => void;
 };
